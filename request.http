@@ -1,0 +1,37 @@
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZSI6IjA5MDc5OTAzMTciLCJpYXQiOjE3MDk5OTcxMTAsImV4cCI6MTcwOTk5NzQxMH0.ZbS586tMQHqGPQWk1b6hhN_4G53sx0S1Jwm2FNKODM4
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "phone": "0907990317",
+    "password": "123"
+}
+
+###
+POST http://localhost:5000/token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZSI6IjA5MDc5OTAzMTciLCJpYXQiOjE3MDk5OTcwNzYsImV4cCI6MTcxMDAwMDY3Nn0.QOuyDzEndi_6HiaO0QzKfmJXf9IwdcD6b9AsVOZsScA"
+}
+
+###
+
+DELETE http://localhost:5000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJoZW5yeSIsImlhdCI6MTYxNTcxNjE5NCwiZXhwIjoxNjE1NzE2NDk0fQ.GwjcMpf5itSfVepLKgnXlOvzkLgrwOhuXfOZVtOctbk
+
+###
+POST  http://localhost:5000/createAccount
+Content-Type: application/json
+
+{
+    "phone": "1234567891",
+    "password": "123",
+    "name": "aaaa",
+    "email": "ljkjklj"
+
+}
+
